@@ -17,7 +17,7 @@ PACKAGES="$PACKAGES ca-certificates"
 PACKAGES="$PACKAGES cfdisk"
 PACKAGES="$PACKAGES coreutils"
 PACKAGES="$PACKAGES coreutils-nohup"
-PACKAGES="$PACKAGES coreutils-timeout"
+PACKAGES="$PACKAGES coreutils-base64"
 PACKAGES="$PACKAGES curl"
 PACKAGES="$PACKAGES e2fsprogs"
 PACKAGES="$PACKAGES f2fs-tools"
@@ -108,7 +108,7 @@ PACKAGES="$PACKAGES tree"
 PACKAGES="$PACKAGES wget-ssl"
 PACKAGES="$PACKAGES zram-swap"
 # PACKAGES="$PACKAGES luci-i18n-dockerman-zh-cn"
-# 增加几个必备组件 方便用户安装iStore
+# 增加几个组件方便安装iStore
 PACKAGES="$PACKAGES script-utils"
 PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
 
