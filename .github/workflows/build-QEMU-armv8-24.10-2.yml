@@ -44,6 +44,7 @@ jobs:
         run: |
           profiles="${{ github.event.inputs.profile }}"
           rootfs_partsize="${{ github.event.inputs.rootfs_partsize }}"
+          include_docker="${{ github.event.inputs.include_docker }}"
           
           IFS=',' read -r -a profile_array <<< "$profiles"
           
@@ -58,6 +59,7 @@ jobs:
               -v "${{ github.workspace }}/armsr-armv8/build2.sh:/home/build/immortalwrt/build.sh" \
               -e PROFILE=$profile \
               -e ROOTFS_PARTSIZE=$rootfs_partsize \
+              -e INCLUDE_DOCKER=$include_docker \
               immortalwrt/imagebuilder:armsr-armv8-openwrt-24.10.1 /bin/bash /home/build/immortalwrt/build.sh
           done
       - name: Generate Firmware SHA-256
