@@ -11,9 +11,9 @@ uci set "dhcp.@domain[-1].ip=203.107.6.88"
 
 # LAN口设置静态IP
 uci set network.lan.proto='static'
-uci set network.lan.ipaddr='192.168.10.254'
+uci set network.lan.ipaddr='192.168.2.254'
 uci set network.lan.netmask='255.255.255.0'
-uci set network.lan.gateway='192.168.10.1'
+uci set network.lan.gateway='192.168.2.1'
 uci set network.lan.broadcast='192.168.10.255'
 
 # 设置所有网口可访问网页终端
