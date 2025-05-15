@@ -19,6 +19,15 @@ on:
         description: '设置软件包大小 单位(MB) 最大数值10240'
         required: true
         default: '2048'
+      include_docker:
+        description: |
+          是否编译 Docker 插件
+        required: true
+        default: 'yes'
+        type: choice
+        options:
+          - 'yes'
+          - 'no'
 
 jobs:
   build:
