@@ -37,20 +37,15 @@ on:
         description: '设置软件包大小 单位(MB)'
         required: true
         default: '2048'
-      enable_pppoe:
-        description: "是否配置PPPoE拨号信息?"
+      include_docker:
+        description: |
+          是否编译 Docker 插件
         required: true
-        default: 'no'
+        default: 'yes'
         type: choice
         options:
-        - 'yes'
-        - 'no'
-      pppoe_account:
-        description: "宽带账号 (若启用PPPoE)"
-        required: false
-      pppoe_password:
-        description: "宽带密码 (若启用PPPoE)"
-        required: false
+          - 'yes'
+          - 'no'
 
 jobs:
   build:
