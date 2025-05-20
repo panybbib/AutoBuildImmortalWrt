@@ -12,13 +12,6 @@ on:
           - friendlyarm_nanopi-r5c
           - friendlyarm_nanopi-r6s
           - friendlyarm_nanopi-r6c
-          - ariaboard_photonicat
-          - armsom_sige3
-          - armsom_sige7
-          - cyber_cyber3588-aib
-          - ezpro_mrkaio-m68s
-          - firefly_roc-rk3328-cc
-          - firefly_roc-rk3568-pc
           - friendlyarm_nanopc-t4
           - friendlyarm_nanopc-t6
           - friendlyarm_nanopi-r2c
@@ -28,6 +21,13 @@ on:
           - friendlyarm_nanopi-r4s
           - friendlyarm_nanopi-r4se
           - friendlyarm_nanopi-r4s-enterprise
+          - ariaboard_photonicat
+          - armsom_sige3
+          - armsom_sige7
+          - cyber_cyber3588-aib
+          - ezpro_mrkaio-m68s
+          - firefly_roc-rk3328-cc
+          - firefly_roc-rk3568-pc
           - huake_guangmiao-g4c
           - lunzn_fastrhino-r66s
           - lunzn_fastrhino-r68s
