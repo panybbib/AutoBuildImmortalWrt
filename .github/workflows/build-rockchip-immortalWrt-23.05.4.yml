@@ -9,11 +9,8 @@ on:
           输入 软路由型号 可选值如下：
         required: true
         options:
-          - ariaboard_photonicat
-          - armsom_sige3
-          - ezpro_mrkaio-m68s 
-          - firefly_roc-rk3328-cc 
-          - firefly_roc-rk3568-pc 
+          - friendlyarm_nanopi-r5s 
+          - friendlyarm_nanopi-r5c 
           - friendlyarm_nanopc-t4 
           - friendlyarm_nanopi-r2c 
           - friendlyarm_nanopi-r2c-plus 
@@ -21,8 +18,11 @@ on:
           - friendlyarm_nanopi-r4s 
           - friendlyarm_nanopi-r4s-enterprise 
           - friendlyarm_nanopi-r4se 
-          - friendlyarm_nanopi-r5c 
-          - friendlyarm_nanopi-r5s 
+          - firefly_roc-rk3328-cc 
+          - firefly_roc-rk3568-pc 
+          - ariaboard_photonicat
+          - armsom_sige3
+          - ezpro_mrkaio-m68s 
           - huake_guangmiao-g4c 
           - lunzn_fastrhino-r66s 
           - lunzn_fastrhino-r68s 
@@ -32,11 +32,11 @@ on:
           - radxa_rock-pi-e 
           - xunlong_orangepi-r1-plus 
           - xunlong_orangepi-r1-plus-lts
-        default: 'friendlyarm_nanopi-r4s'
+        default: 'friendlyarm_nanopi-r5s'
       rootfs_partsize:
         description: '设置软件包大小 单位(MB)'
         required: true
-        default: '1024'
+        default: '2048'
       enable_pppoe:
         description: "是否配置PPPoE拨号信息?"
         required: true
