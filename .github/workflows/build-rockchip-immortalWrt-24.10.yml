@@ -8,6 +8,10 @@ on:
         description: |
           输入 软路由型号 可选值如下：
         options:
+          - friendlyarm_nanopi-r5s
+          - friendlyarm_nanopi-r5c
+          - friendlyarm_nanopi-r6s
+          - friendlyarm_nanopi-r6c
           - ariaboard_photonicat
           - armsom_sige3
           - armsom_sige7
@@ -24,10 +28,6 @@ on:
           - friendlyarm_nanopi-r4s
           - friendlyarm_nanopi-r4se
           - friendlyarm_nanopi-r4s-enterprise
-          - friendlyarm_nanopi-r5c
-          - friendlyarm_nanopi-r5s
-          - friendlyarm_nanopi-r6c
-          - friendlyarm_nanopi-r6s
           - huake_guangmiao-g4c
           - lunzn_fastrhino-r66s
           - lunzn_fastrhino-r68s
@@ -52,11 +52,11 @@ on:
           - xunlong_orangepi-r1-plus
           - xunlong_orangepi-r1-plus-lts
         required: true
-        default: 'friendlyarm_nanopi-r3s'
+        default: 'friendlyarm_nanopi-r5s'
       rootfs_partsize:
         description: '设置软件包大小 单位(MB)'
         required: true
-        default: '1024'
+        default: '2048'
       enable_pppoe:
         description: "是否配置PPPoE拨号信息?"
         required: true
