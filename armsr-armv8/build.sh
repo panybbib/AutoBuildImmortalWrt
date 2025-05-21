@@ -103,6 +103,7 @@ PACKAGES="$PACKAGES smartmontools"
 PACKAGES="$PACKAGES tree"
 PACKAGES="$PACKAGES wget-ssl"
 PACKAGES="$PACKAGES zram-swap"
+
 # 增加几个组件方便安装iStore
 PACKAGES="$PACKAGES script-utils"
 PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
