@@ -116,6 +116,11 @@ PACKAGES="$PACKAGES wget-ssl"
 PACKAGES="$PACKAGES wifischedule"
 PACKAGES="$PACKAGES zram-swap"
 
+# 增加几个组件方便安装iStore
+PACKAGES="$PACKAGES script-utils"
+PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-filebrowser-zh-cn"
+
 # 判断是否需要编译 Docker 插件
 if [ "$INCLUDE_DOCKER" = "yes" ]; then
     PACKAGES="$PACKAGES luci-app-dockerman"
