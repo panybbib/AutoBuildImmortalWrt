@@ -26,6 +26,7 @@ PACKAGES="$PACKAGES e2fsprogs"
 PACKAGES="$PACKAGES ebtables-nft"
 PACKAGES="$PACKAGES etherwake"
 PACKAGES="$PACKAGES f2fs-tools"
+PACKAGES="$PACKAGES fdisk"
 PACKAGES="$PACKAGES ffmpeg"
 PACKAGES="$PACKAGES git"
 PACKAGES="$PACKAGES git-http"
@@ -127,6 +128,7 @@ PACKAGES="$PACKAGES luci-i18n-msd_lite-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-mwan3helper-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-mwan3-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-nft-qos-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-package-manager-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-passwall-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-pppoe-relay-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-ramfree-zh-cn"
@@ -172,9 +174,9 @@ PACKAGES="$PACKAGES xtables-nft"
 PACKAGES="$PACKAGES zerotier"
 
 #24.10 增加几个必备组件 方便用户安装iStore
-PACKAGES="$PACKAGES luci-i18n-package-manager-zh-cn"
-PACKAGES="$PACKAGES fdisk"
+PACKAGES="$PACKAGES script-utils"
 PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-filebrowser-go-zh-cn"
 
 # 判断是否需要编译 Docker 插件
 if [ "$INCLUDE_DOCKER" = "yes" ]; then
