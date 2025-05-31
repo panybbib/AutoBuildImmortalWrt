@@ -8,6 +8,7 @@ on:
         type: choice
         description: |
           输入 软路由型号 可选值如下：
+        required: true
         options:
           - friendlyarm_nanopi-r5s
           - friendlyarm_nanopi-r5c
@@ -52,7 +53,6 @@ on:
           - xunlong_orangepi-5-plus
           - xunlong_orangepi-r1-plus
           - xunlong_orangepi-r1-plus-lts
-        required: true
         default: 'friendlyarm_nanopi-r5s'
       rootfs_partsize:
         description: '设置软件包大小 单位(MB) 最大数值10240'
@@ -84,7 +84,7 @@ jobs:
           profiles="${{ github.event.inputs.profile }}"
           rootfs_partsize="${{ github.event.inputs.rootfs_partsize }}"
           include_docker="${{ github.event.inputs.include_docker }}"
-          
+
           IFS=',' read -r -a profile_array <<< "$profiles"
           
           for profile in "${profile_array[@]}"; do
@@ -112,7 +112,7 @@ jobs:
       - name: Upload ImmortWrt as release assets
         uses: softprops/action-gh-release@v2.2.1
         with:
-          tag_name: Autobuild
+          tag_name: Autobuild-24.10.1
           name: ImmortWrt-Rockchip
           body_path: ${{ github.workspace }}/info.md
           files: |
