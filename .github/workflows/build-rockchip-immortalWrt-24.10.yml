@@ -91,6 +91,7 @@ jobs:
         run: |
           profiles="${{ github.event.inputs.profile }}"
           rootfs_partsize="${{ github.event.inputs.rootfs_partsize }}"
+          include_docker="${{ github.event.inputs.include_docker }}"
           
           IFS=',' read -r -a profile_array <<< "$profiles"
           
