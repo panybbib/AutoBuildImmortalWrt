@@ -4,6 +4,7 @@
 echo "Building for profile: $PROFILE"
 # yml 传入的固件大小 ROOTFS_PARTSIZE
 echo "Building for ROOTFS_PARTSIZE: $ROOTFS_PARTSIZE"
+# yml 传入是否需要编译 Docker 插件
 echo "Include Docker: $INCLUDE_DOCKER"
 
 # 输出调试信息
