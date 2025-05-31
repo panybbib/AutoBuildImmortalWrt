@@ -1,7 +1,5 @@
 #!/bin/bash
-# Log file for debugging
-LOGFILE="/tmp/uci-defaults-log.txt"
-echo "Starting 99-custom.sh at $(date)" >> $LOGFILE
+
 # yml 传入的路由器型号 PROFILE
 echo "Building for profile: $PROFILE"
 # yml 传入的固件大小 ROOTFS_PARTSIZE
@@ -11,7 +9,6 @@ echo "Include Docker: $INCLUDE_DOCKER"
 
 # 输出调试信息
 echo "$(date '+%Y-%m-%d %H:%M:%S') - Starting build process..."
-
 
 # 定义所需安装的包列表 下列插件你都可以自行删减
 PACKAGES=""
