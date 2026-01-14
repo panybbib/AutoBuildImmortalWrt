@@ -21,7 +21,7 @@ on:
       profile:
         type: choice
         description: |
-          可用于ARM64虚拟机(比如macOS下的UTM虚拟机 比如斐讯N1/R3S/R5S等arm64系统的PVE虚拟机)
+          可用于ARM64虚拟机(比如macOS下的UTM虚拟机 N1/R3S/R5S等arm64系统的PVE虚拟机)
         options:
           - generic
         required: true
