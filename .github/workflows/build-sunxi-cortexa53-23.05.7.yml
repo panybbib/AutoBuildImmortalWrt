@@ -1,4 +1,4 @@
-name: build-sunxi-cortexa53-23.05.4-ImmpotalWrt
+name: build-sunxi-cortexa53-23.05.7-ImmpotalWrt
 
 on:
   workflow_dispatch:
@@ -58,7 +58,7 @@ jobs:
             echo "❎ 未启用 luci-app-store"
           fi
       
-      - name: Build sunxi-cortexa53 ImmpotalWrt 23.05.4
+      - name: Build sunxi-cortexa53 ImmpotalWrt 23.05.7
         run: |
           profiles="${{ github.event.inputs.profile }}"
           include_docker="${{ github.event.inputs.include_docker }}"
@@ -79,7 +79,7 @@ jobs:
               -e PROFILE=$profile \
               -e INCLUDE_DOCKER=$include_docker \
               -e ROOTSIZE=$size \
-              immortalwrt/imagebuilder:sunxi-cortexa53-openwrt-23.05.4 /bin/bash /home/build/immortalwrt/build.sh
+              immortalwrt/imagebuilder:sunxi-cortexa53-openwrt-23.05.7 /bin/bash /home/build/immortalwrt/build.sh
           done
 
       - name: Create info
