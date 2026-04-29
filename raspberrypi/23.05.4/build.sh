@@ -33,7 +33,7 @@ fi
 echo "$(date '+%Y-%m-%d %H:%M:%S') - Starting build process..."
 
 
-# 定义所需安装的包列表 23.05.4
+# 定义所需安装的包列表 23.05.7
 PACKAGES=""
 PACKAGES="$PACKAGES curl"
 PACKAGES="$PACKAGES luci-i18n-diskman-zh-cn"
